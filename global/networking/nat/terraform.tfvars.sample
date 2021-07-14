@@ -1,0 +1,4 @@
+/* GLOBAL */
+project_id   = "searce-playground"
+region       = "us-central1"
+vpc_name     = "client-prod-vpc"
