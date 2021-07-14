@@ -1,0 +1,22 @@
+/* GLOBAL */
+project_id = "searce-playground"
+region     = "us-central1"
+vpc_name   = "client-prod-vpc"
+
+/* Subnets */
+subnets = [
+  {
+    subnet_name           = "prod-pace-pub-us-ct1-subnet"
+    subnet_ip             = "10.1.1.0/24"
+    subnet_region         = "us-central1"
+    subnet_private_access = "true"
+    subnet_flow_logs      = "false"
+  },
+  {
+    subnet_name           = "prod-pace-pvt-us-ct1-subnet"
+    subnet_ip             = "10.1.2.0/24"
+    subnet_region         = "us-central1"
+    subnet_private_access = "true"
+    subnet_flow_logs      = "false"
+  }
+]
